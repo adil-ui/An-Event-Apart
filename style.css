@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    height: 80vh;
+    background-image: url(images/bg_event-sf-2020.svg), url(images/bg_city-art-fog.svg), linear-gradient(#FFFFEE 0%, #FFAD9C 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #FFAD9C;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+}
+.logo img{
+    margin-top: 5px;
+    width: 60%;
+}
+nav ul{
+    display: flex;
+
+}
+nav li{
+    list-style: none;
+    border-bottom: .5px solid #ff840d;
+    margin: 0 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.menu{
+    border: none;
+    display: none;
+}
+
+
+/* .logo i{
+    color: #978e51;
+}
+.logo a{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+} */
+
+.hero{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero h1{
+    font-size: 100px;
+    color: #361b0b;
+}
+.hero h2{
+    font-size: 40px;
+    color: #361b0b;
+}
+.hero p{
+    font-size: 24px;
+    color: #361b0b;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    font-weight: 500;
+
+}
+.hero p i{
+    font-family: sans-serif;
+}
+.hero button{
+    background-color: #ff3300;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.down button{
+    position: absolute;
+    bottom: -4%;
+    transform: translate(-50%);
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: #0d2171;
+    border: 4px solid #0d2171;
+    border-radius: 50%;
+}
+
+/* ***********************************************    date   *****************************************************/
+main{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+.date{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    border-top: 2px solid rgb(206, 206, 206);
+    border-bottom: 2px solid rgb(206, 206, 206);
+    padding: 20px 0 10px;
+    margin-top: 50px;
+
+}
+.date div{
+    text-align: right;
+    padding-top: 15px;
+}
+.date h2{
+    font-size: 80px;
+}
+.date h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.date i{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+}
+
+
+
+/* ***********************************************    resources   *****************************************************/
+
+.resources h2{
+    font-size: 56px;
+    margin: 40px 0 80px;
+}
+
+.resources h2 span{
+    border-bottom: 4px solid #ff840d;
+    
+}
+.resource{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr ;
+    gap: 20px;
+}
+.resource article{
+    position: relative;
+    border: 0.5px solid rgba(0,0,0,0.5);
+}
+.resource_text{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 20px;
+    font-family: sans-serif;
+    
+}
+.resource_text h4{
+    color: #fba32c;
+    font-family: sans-serif;
+    font-size: 12px;
+    
+}
+.resource_text h5{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+.resource img{
+    width: 100%;
+}
+
+/* ***********************************************    learning   *****************************************************/
+
+.learning{
+    margin: 80px 0 50px;
+}
+.learning h2{
+    font-size: 56px;
+    margin: 40px 0 80px;
+}
+
+.learning  span{
+    border-bottom: 4px solid #ff840d;  
+}
+.learning_container{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.learning img{
+    width: 100%;
+    height: 100%;
+}
+.learning_text{
+    padding: 80px 40px;
+    margin-left: 20px;
+    border-top: 2px solid rgb(206, 206, 206);
+    border-bottom: 2px solid rgb(206, 206, 206);
+
+}
+.learning_text h3{
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.learning_text p{
+    font-family: sans-serif;
+    font-size: 26px;
+    line-height: 1.9;
+    color: rgb(49, 49, 49);
+}
+
+/* ***********************************************    footer   *****************************************************/
+
+footer{
+    background-color: #353433;
+}
+.footer_container{
+    padding: 50px 30px;
+}
+.footer_row_1{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    margin-bottom: 50px;
+}
+.footer_container h4, .footer_container h3{
+    color: white;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+
+}
+.footer_container li{
+    list-style: none;
+    padding: 10px 0;
+    color: rgb(126, 126, 126);
+}
+.footer_container a, p{
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.footer_row_2{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+}
+.footer_row_2 img{
+    width: 50px;
+}
